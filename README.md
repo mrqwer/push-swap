@@ -28,11 +28,11 @@ Two stacks (`a` and `b`) and a set of instructions are available for sorting the
 
 ## Usage
 Two programs are located in one program, just attached with tags while compiling.
-To compile ****push_swap* program, run:
+To compile `push_swap` program, run:
 ```bash
 make push_swap
 ```
-To compile *checker* program, run:
+To compile `checker` program, run:
 ```bash
 make checker
 ```
@@ -41,7 +41,10 @@ Then, be free to use it, like:
 ```bash
 ./push_swap "0 4 3 5 6 7"
 ```
-
+or like:
+```bash
+ARG="4 67 3 87 23"; ./push-swap "$ARG" | ./checker "$ARG"
+```
 ## Tech
 Go version 1.20
 
