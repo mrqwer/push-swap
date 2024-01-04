@@ -45,17 +45,17 @@ var INSTRUCTIONS = map[string]func(stacks ...*Stack){
 	},
 	"rra": func(stacks ...*Stack) {
 		a := stacks[0]
-		reverse_rotate(a)
+		reverseRotate(a)
 	},
 	"rrb": func(stacks ...*Stack) {
 		b := stacks[0]
-		reverse_rotate(b)
+		reverseRotate(b)
 	},
 	"rrr": func(stacks ...*Stack) {
 		a := stacks[0]
 		b := stacks[1]
-		reverse_rotate(a)
-		reverse_rotate(b)
+		reverseRotate(a)
+		reverseRotate(b)
 	},
 }
 

@@ -36,7 +36,7 @@ func sortComplex(stackA *Stack, stackB *Stack) {
 		}
 	} else {
 		for stackA.head != smallest {
-			reverse_rotate(stackA)
+			reverseRotate(stackA)
 			fmt.Println("rra")
 		}
 	}

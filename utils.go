@@ -85,7 +85,7 @@ func makeRotations(stack *Stack, topNode *Node) {
 				rotate(stack)
 				fmt.Println("ra")
 			} else {
-				reverse_rotate(stack)
+				reverseRotate(stack)
 				fmt.Println("rra")
 			}
 		case 'b':
@@ -93,7 +93,7 @@ func makeRotations(stack *Stack, topNode *Node) {
 				rotate(stack)
 				fmt.Println("rb")
 			} else {
-				reverse_rotate(stack)
+				reverseRotate(stack)
 				fmt.Println("rrb")
 			}
 		}
@@ -118,8 +118,8 @@ func getCheapest(stack *Stack) *Node {
 
 func reverseRotateBoth(stackA *Stack, stackB *Stack, cheapestNode *Node) {
 	for stackA.head != cheapestNode.targetNode && stackB.head != cheapestNode {
-		reverse_rotate(stackA)
-		reverse_rotate(stackB)
+		reverseRotate(stackA)
+		reverseRotate(stackB)
 		fmt.Println("rrr")
 	}
 	setPositions(stackA)

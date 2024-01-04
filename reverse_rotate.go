@@ -1,6 +1,6 @@
 package main
 
-func reverse_rotate(stack *Stack) {
+func reverseRotate(stack *Stack) {
 	if stack == nil || stack.head == nil || stack.head.nextNode == nil {
 		return
 	}

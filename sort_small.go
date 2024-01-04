@@ -9,7 +9,7 @@ func sortSmallThreeNumbers(stackA *Stack) {
 		rotate(stackA)
 		fmt.Println("ra")
 	} else if stackA.head.nextNode == biggestNode {
-		reverse_rotate(stackA)
+		reverseRotate(stackA)
 		fmt.Println("rra")
 	}
 
@@ -23,7 +23,7 @@ func reverseSortSmallThreeNumbers(stackA *Stack) {
 	smallestNode := getSmallest(stackA)
 
 	if stackA.head == smallestNode {
-		reverse_rotate(stackA) // Assuming you have a reverseRotate function for reverse rotation
+		reverseRotate(stackA)
 		fmt.Println("rra")
 	} else if stackA.head.nextNode == smallestNode {
 		rotate(stackA)
